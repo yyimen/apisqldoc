@@ -1,0 +1,7 @@
+.vscode/settings.json
+node_modules
+builds/vitepress/.vitepress/cache
+builds/vitepress/book
+dist
+bin
+.DS_Store

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+  <title>API SQL</title>
+  <link rel="stylesheet" href="./cdn/docsify-4.13.1/themes/vue.css">
+  <link href="./static/favicon.ico" rel="icon" />
+
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script>
+    // Docsify Configuration (see https://docsify.js.org/#/configuration)
+    window.$docsify = {
+      homepage: 'readme.md',
+      // Sidebar Configuration
+      auto2top: true,
+      loadSidebar: true,// 侧边栏
+      // loadSidebar: '_sidebar.md',
+      // loadNavbar: true,// 导航栏
+
+      maxLevel: 0,
+      // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
+      // 自定义边栏会关闭 文件的 边栏导航,定义此值,强制开启
+      subMaxLevel: 4,
+      search: { placeholder: '搜索', noData: '找不到结果', paths: 'auto', },// Search Plugin Configuration
+      copyCode: { buttonText: '复制到剪切板', errorText: 'Error', successText: '已复制', },// docsify-copy-code (defaults)
+      coverpage: false,
+      onlyCover: true,
+      // basePath: 'https://git89.yyimen.com:89/pub2/apisqldoc/-/blob/main/book',
+      basePath: 'http://192.168.8.106:88/apisqldoc/',
+      // relativePath: true,
+    };
+  </script>
+
+  <!-- Required -->
+  <!-- <script src="./cdn/docsify-4.13.1/lib/docsify.min.js"></script> -->
+  <script src="./cdn/docsify-4.13.1/lib/docsify.js"></script>
+
+  <!-- Recommended -->
+  <script src="./cdn/docsify-4.13.1/lib/plugins/zoom-image.min.js"></script>
+  <script src="./cdn/docsify-4.13.1/lib/plugins/search.js"></script>
+
+  <script src="./cdn/docsify-copy-code-3.0.0.min.js"></script>
+
+  <!-- <script src="./cdn/docsify-pagination-2.10.0.min.js"></script> -->
+
+</body>
+
+</html>

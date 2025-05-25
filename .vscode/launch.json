@@ -1,0 +1,57 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "当前文件",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "docsify_bildSideBar",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/builds/docsify/makeSidebar.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "vitepress dev",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/builds/vitepress/node_modules/vitepress/bin/vitepress.js",
+            "cwd": "${workspaceFolder}/builds/vitepress",
+            "args": [
+                "dev"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "msedge", // 或 "msedge" 使用 Edge 浏览器
+            "request": "launch",
+            "name": "Vite Debug",
+            "url": "http://localhost:5173", // 与 Vite 开发服务器端口一致
+            "webRoot": "${workspaceFolder}/builds/vitepress/.viteexpress", // 指向源码目录
+            // "sourceMaps": true,
+            // "preLaunchTask": "npm: dev" // 自动启动 Vite 服务（需配合 tasks.json）
+        }
+    ]
+}

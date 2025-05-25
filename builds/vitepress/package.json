@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@lando/vitepress-theme-default-plus": "^1.1.1",
+    "vitepress": "2.0.0-alpha.5",
+    "vitepress-sidebar": "^1.31.1"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
+    "gray-matter": "^4.0.3",
+    "markdown-it-custom-attrs": "^1.0.2",
+    "viewerjs": "^1.11.7",
+    "vitepress-plugin-image-viewer": "^1.1.6",
+    "vitepress-plugin-nested-sidebar": "^0.1.3"
+  }
+}
