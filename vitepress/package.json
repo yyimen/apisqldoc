@@ -9,7 +9,9 @@
     "docs:dev": "vitepress dev  --host",
     "docs:build": "vitepress build && tar -czvf book.tar.gz .vitepress/dist",
     "docs:preview": "vitepress preview",
-    "preview": "node .vitepress/testWeb.js"
+    "preview": "node .vitepress/testWeb.js",
+    "build2": "node ./docsify/makeSidebar.js",
+    "clear":"rm -r .vitepress/dist || true && rm -r .vitepress/cache || true &&  rm book.tar.gz"
   },
   "dependencies": {
     "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",

@@ -18,6 +18,7 @@ function scanDir(rootPath, rPath, nodeItem) {
             if (file.indexOf('.') == 0) continue;
             if (file == 'images') continue;
             if (file == 'node_modules') continue;
+            if (file == 'public') continue;
             const item = {
                 name: file,
                 name2: temp[temp.length - 1],

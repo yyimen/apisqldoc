@@ -14,6 +14,7 @@ function scanDir(rPath, nodeItem) {
             if (file.indexOf('.') == 0) continue;
             if (file == 'images') continue;
             if (file == 'node_modules') continue;
+            if (file == 'public') continue;
             const item = {
                 name: file,
                 name2: temp[temp.length - 1],
@@ -109,5 +110,5 @@ function makeSidebar(rootPath) {
     fs.writeFileSync(path.join(rootPath, '_sidebar.md'), sideBarMd, 'utf-8');
     console.log('makeSidebar done fname:',path.join(rootPath, '_sidebar.md'))
 }
-let rootPath = path.join(__dirname, '../../book').replaceAll('\\', '/'); // 项目根目录
+let rootPath = path.join(__dirname, '../book').replaceAll('\\', '/'); // 项目根目录
 makeSidebar(rootPath)
