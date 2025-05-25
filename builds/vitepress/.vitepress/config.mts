@@ -1,6 +1,7 @@
 // https://vitepress.dev/reference/site-config
 // https://vitepress.dev/reference/default-theme-config
 import { defineConfig } from 'vitepress'
+// import { createRobots } from 'vite-plugin-robots'
 import mdItCustomAttrs from 'markdown-it-custom-attrs'//点击图片放大
 // import VitepressPluginNestedSidebar from "vitepress-plugin-nested-sidebar";
 // const { generateSidebar } = VitepressPluginNestedSidebar();
@@ -81,7 +82,20 @@ export default defineConfig({
   vite: {
     build: {
       sourcemap: true  // 必须设置为 true
-    }
+    },
+    // plugins: [
+    //   createRobots({
+    //     host: 'https://yourdomain.com',
+    //     sitemap: 'https://yourdomain.com/sitemap.xml',
+    //     policies: [
+    //       {
+    //         userAgent: '*',
+    //         allow: '/',
+    //         disallow: '/private/',
+    //       },
+    //     ],
+    //   }),
+    // ],
     // plugins: [
     //   AutoSidebar({
     //     // 当插件将目录结构转换为 sidebar 配置后触发，

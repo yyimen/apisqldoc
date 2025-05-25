@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 文档
-      link: /010@入门/010@apiSQL简介/readme.md
+      link: /010@入门/010@APISQL简介/readme.md
     - theme: brand
       text: 目录
       link: /_sidebar.md

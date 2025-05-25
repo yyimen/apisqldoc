@@ -1,11 +1,12 @@
 {
   "devDependencies": {
     "@lando/vitepress-theme-default-plus": "^1.1.1",
+    "vite-plugin-robots": "^1.0.5",
     "vitepress": "2.0.0-alpha.5",
     "vitepress-sidebar": "^1.31.1"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "docs:dev": "vitepress dev  --host",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },

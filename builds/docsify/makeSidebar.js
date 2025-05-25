@@ -88,7 +88,8 @@ function _makeSidebar(thisNode, level) {
 function makeSidebar(rootPath) {
     const rootItem = { name: path.basename(rootPath), rPath: rootPath, isDir: true, children: [] }
     const rootArray = [rootItem]
-    let rPath = './'
+    //let rPath = './'
+    let rPath = ''
     scanDir(rPath, rootItem)
     countDir(rootItem)
     // console.log(rootArray)
