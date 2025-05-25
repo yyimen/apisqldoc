@@ -3,5 +3,8 @@ node_modules
 builds/vitepress/.vitepress/cache
 builds/vitepress/book
 dist
+cache
 bin
 .DS_Store
+*.tar
+*.tar.gz

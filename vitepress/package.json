@@ -7,11 +7,14 @@
   },
   "scripts": {
     "docs:dev": "vitepress dev  --host",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:build": "vitepress build && tar -czvf book.tar.gz .vitepress/dist",
+    "docs:preview": "vitepress preview",
+    "preview": "node .vitepress/testWeb.js"
   },
   "dependencies": {
     "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
+    "express": "^5.1.0",
+    "exprss": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "markdown-it-custom-attrs": "^1.0.2",
     "viewerjs": "^1.11.7",

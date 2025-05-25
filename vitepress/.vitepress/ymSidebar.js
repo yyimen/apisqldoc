@@ -97,18 +97,7 @@ function generateVitePressAnchor(title, slugMap) {
         .replace(/^-+|-+$/g, "")          // 6. 移除首尾的连字符
         .replace(/^(\d)/, "_$1")          // 7. 防止以数字开头（添加下划线前缀）
         .toLowerCase();
-    // Step 1: 文本标准化处理
-    // // let slug = title
-    // //     .toLowerCase() // 转小写（规则来源：网页3/网页7）
-    // //     .replace(/[\s_]+/g, separator) // 空格/下划线转分隔符（如"hello_world" → "hello-world"）
-    // //     .replace(/[\s.]+/g, separator) // 
-    // //     .replace(/[^\p{L}\d\-]/gu, '') // 过滤非字母/数字/分隔符（保留中文，规则来源：网页1/网页3）
-    // //     .replace(new RegExp(`\\${separator}+`, 'g'), separator) // 合并连续分隔符
-    // //     .replace(new RegExp(`^\\${separator}|\\${separator}$`, 'g'), ''); // 去除首尾分隔符
-    // //数字开头的前面加分隔符
-    // if (/^\d/.test(slug)) {
-    //     slug = separator + slug;
-    // }
+    
 
     // Step 2: 处理空锚点（如纯符号标题）
     if (!slug) return '';

@@ -17,7 +17,7 @@ hero:
       text: 目录
       link: /_sidebar.md
   image:
-    src: /images/logo3.png
+    src: /logo3.png
     alt: Sidebar
 
 features:

@@ -11,10 +11,7 @@ import { ymSidebar } from './ymSidebar.js'
 import path from 'path';
 // console.log('====', import.meta.dirname); // 输出：/path/to/your/module
 
-const bookRootDir = path.join(import.meta.dirname, '../../../book')
-// const bookRootDir = path.join(import.meta.dirname, '../book')
-// const bookRootDir = join(__dirname, '../book')
-// const bookRootDir = './book'
+const bookRootDir = path.join(import.meta.dirname, '../book')
 console.log('====bookRootDir', bookRootDir);
 
 function getSidebar() {
@@ -28,7 +25,8 @@ export default defineConfig({
   title: "apisqldoc",
   description: "apisqldoc",
   base: basePath,
-  srcDir: bookRootDir,
+  srcDir: 'book',
+  
   head: [
     ['link', { rel: 'icon', href: basePath + '/images/favicon.ico' }],
   ],
@@ -81,7 +79,7 @@ export default defineConfig({
   },
   vite: {
     build: {
-      sourcemap: true  // 必须设置为 true
+      // sourcemap: true,  // 调试时为 true
     },
     // plugins: [
     //   createRobots({
@@ -114,3 +112,4 @@ export default defineConfig({
     // ],
   },
 })
+
