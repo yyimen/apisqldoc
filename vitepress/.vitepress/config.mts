@@ -19,6 +19,12 @@ function getSidebar() {
   return a;
 }
 
+import fs from 'fs';
+
+const pkg = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, '../package.json'), 'utf-8')) // 根据实际路径调整
+const version = pkg.version
+console.log('version:', version)
+
 const basePath = '/apisql'
 export default defineConfig({
   lang: 'zh-Hans',
@@ -26,7 +32,7 @@ export default defineConfig({
   description: "apisqldoc",
   base: basePath,
   srcDir: 'book',
-  
+
   head: [
     ['link', { rel: 'icon', href: basePath + '/favicon.ico' }],
   ],
@@ -53,7 +59,7 @@ export default defineConfig({
     // aside: false,
     footer: {
       message: '',
-      copyright: 'Copyright © 2025 - present apisql'
+      copyright: 'Copyright © 2022 - present apisql  (ver:' + version + ')'
     },
     search: {
       provider: 'local',
