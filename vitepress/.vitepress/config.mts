@@ -55,11 +55,11 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/yyimen/apisqldoc.git' }
     ],
-    aside: true,
-    // aside: false,
+    // aside: true,
+    aside: false,
     footer: {
       message: '',
-      copyright: 'Copyright © 2022 - present apisql  (ver:' + version + ')'
+      copyright: 'Copyright © 2022 - present apisql  (V:' + version + ')'
     },
     search: {
       provider: 'local',
