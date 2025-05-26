@@ -38,10 +38,11 @@ const { execSync } = require('child_process');
 // execSync(`npm version ${versionType} -m "Bump version to %s [skip ci]"`);
 try {
     let cmds = [
-        `git add . `,
+        `git add .`,
         `git commit -m "Release v${newVersion}"`,
         `git tag -f v${newVersion} -m "Release v${newVersion}"`,
         `git push -f origin v${newVersion} `,
+        `git push -f origin`,
     ]
     for (let cmd of cmds) {
         console.log(cmd)
