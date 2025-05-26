@@ -24,11 +24,11 @@ features:
   - title: 速度真的很快
     details: 将数据库增删改查/视图/存储过程直接发布为HTTPS API
     icon: 📝
-  - title:  脚本扩展
-    details: 支持通过前置JS脚本进行请求预处理，后置脚本实现响应二次加工.
+  - title:  内网数据,互联网发布
+    details: 内网数据库通过网关访问,设计几个API,开放多少数据
     icon: 🚀
-  - title: 混合架构
-    details: 既能对接数据库，也可代理已有第三方API实现统一管理
+  - title: 企业级安全
+    details: 集成IP白名单、AK/SK密钥、Token令牌、JSON Web Token（JWT）认证等
     icon: 🎉
 
 ---
