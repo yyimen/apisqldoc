@@ -28,11 +28,11 @@ export default defineConfig({
   srcDir: 'book',
   
   head: [
-    ['link', { rel: 'icon', href: basePath + '/public/favicon.ico' }],
+    ['link', { rel: 'icon', href: basePath + '/favicon.ico' }],
   ],
   themeConfig: {
     siteTitle: 'apiSQL',
-    logo: '/public/favicon.ico',//'/images/logo.png',
+    logo: '/favicon.ico',//'/images/logo.png',
 
     nav: [
       { text: 'Home', link: '/' },
