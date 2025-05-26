@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1-B250526",
   "devDependencies": {
     "@lando/vitepress-theme-default-plus": "^1.1.1",
     "vite-plugin-robots": "^1.0.5",
@@ -13,7 +13,7 @@
     "docs:preview": "vitepress preview",
     "preview": "node .vitepress/testWeb.js",
     "build2": "node ./docsify/makeSidebar.js",
-    "clear":"rm -r .vitepress/dist || true && rm -r .vitepress/cache || true &&  rm book.tar.gz"
+    "clear": "rm -r .vitepress/dist || true && rm -r .vitepress/cache || true &&  rm book.tar.gz"
   },
   "dependencies": {
     "@iminu/vitepress-plugin-auto-sidebar": "^1.0.3",
