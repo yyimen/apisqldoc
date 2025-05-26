@@ -1,0 +1,78 @@
+kind: pipeline # 定义一个管道
+type: docker # 定义管道的类型
+name: build_apisqldoc
+
+platform:
+  arch: amd64
+  os: linux
+
+clone:
+  disable: true
+
+volumes:
+  - name: node20-pnpm-cache
+    host:
+      path: /mnt/disk2/pnpmStore
+
+steps:
+  - name: clone
+    image: alpine/git
+    commands:
+      - git clone https://git89.yyimen.com:89/db2api/apisqldoc.git .
+      - ls /drone/src
+  # https://paperplane.cc/p/f05c3b5a749a/
+  - name: build
+    image: node:20.19.2-bullseye
+    volumes:
+      - name: node20-pnpm-cache
+        path: /drone/src/.pnpm-store
+    commands:
+      - npm config set registry https://registry.npmmirror.com/
+      - npm install pnpm -g
+      - cd ./vitepress
+      - pnpm install
+      - pnpm store path
+      - node ./docsify/makeSidebar.js
+      - pnpm docs:build
+      - ls -l ./.vitepress/dist/
+      - ls -l ./
+
+  - name: deploy-copy 
+    image: appleboy/drone-scp
+    settings:
+      host: 
+        - doc.apisql.cn
+      port: 22
+      username: root
+      password: 
+        from_secret: SSH_PWD_APISQL_CN
+      command_timeout: 5m
+      overwrite: true
+      # strip_components: 1
+      source: 
+        - ./vitepress/book.tar.gz
+      target: /tmp
+      depends_on: [build]
+  
+  - name: deploy-unzip 
+    image: appleboy/drone-ssh
+    settings:
+      host: doc.apisql.cn
+      port: 22
+      username: root
+      password: 
+        from_secret: SSH_PWD_APISQL_CN
+      script:
+        - cd /ymDocker/open/www/doc
+        - pwd
+        - rm -rf ./apisql.old || true
+        - mv ./apisql ./apisql.old || true
+        - mkdir apisql
+        - cd apisql
+        - tar -xzf /tmp/vitepress/book.tar.gz 
+        - rm -rf /tmp/vitepress
+        - ls -l -a
+        - echo "ok"
+trigger:
+  event:
+    - tag
