@@ -74,7 +74,14 @@ steps:
         - ls -l -a
         - echo "ok"
 
+# trigger:
+#   event: [tag]
+#     ref:
+#       include: [refs/tags/v*]
+
 trigger:
-  event: [tag]
-    ref:
-      include: [refs/tags/v*]
+  event:
+    - tag
+  ref:
+    include:
+      - refs/tags/v*
