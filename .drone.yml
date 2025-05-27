@@ -73,6 +73,7 @@ steps:
         - rm -rf /tmp/vitepress
         - ls -l -a
         - echo "ok"
+
 event: [tag]
   ref:
     include: [refs/tags/v*]
