@@ -74,6 +74,7 @@ steps:
         - ls -l -a
         - echo "ok"
 
-event: [tag]
-  ref:
-    include: [refs/tags/v*]
+trigger:
+  event: [tag]
+    ref:
+      include: [refs/tags/v*]
