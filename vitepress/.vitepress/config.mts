@@ -1,25 +1,13 @@
-// https://vitepress.dev/reference/site-config
-// https://vitepress.dev/reference/default-theme-config
 import { defineConfig } from 'vitepress'
-// import { createRobots } from 'vite-plugin-robots'
 import mdItCustomAttrs from 'markdown-it-custom-attrs'//点击图片放大
-// import VitepressPluginNestedSidebar from "vitepress-plugin-nested-sidebar";
-// const { generateSidebar } = VitepressPluginNestedSidebar();
 import llmstxt from 'vitepress-plugin-llms'
 import { ymSidebar } from './ymSidebar.js'
 
+import fs from 'fs';
 import path from 'path';
-// console.log('====', import.meta.dirname); // 输出：/path/to/your/module
 
 const bookRootDir = path.join(import.meta.dirname, '../book')
 console.log('====bookRootDir', bookRootDir);
-
-function getSidebar() {
-  let a = ymSidebar(bookRootDir)
-  return a;
-}
-
-import fs from 'fs';
 
 const pkg = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, '../package.json'), 'utf-8')) // 根据实际路径调整
 const version = pkg.version
@@ -44,7 +32,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '在线版', link: 'https://open.apisql.cn' }
     ],
-    sidebar: getSidebar(),
+    sidebar: ymSidebar(bookRootDir),
     // sidebar: ymSidebar(bookRootDir),
     sidebarMenuLabel: '目录',
     outline: [2, 3],
@@ -59,7 +47,7 @@ export default defineConfig({
     aside: false,
     footer: {
       message: '',
-      copyright: 'Copyright © 2022 - present apisql  (V:' + version + ')'
+      copyright: 'Copyright © 2022 - present apisql  (Ver:' + version + ')'
     },
     search: {
       provider: 'local',
