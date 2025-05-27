@@ -4,12 +4,14 @@
     "@lando/vitepress-theme-default-plus": "^1.1.1",
     "vite-plugin-robots": "^1.0.5",
     "vitepress": "2.0.0-alpha.5",
+    "vitepress-plugin-llms": "^1.3.4",
     "vitepress-sidebar": "^1.31.1"
   },
   "scripts": {
     "newVer": "node ./packageNewVer.js",
     "docs:dev": "vitepress dev  --host",
     "docs:build": "vitepress build && cd .vitepress/dist && tar -czvf ../../book.tar.gz ./*",
+    "docs:build2": "vitepress build",
     "docs:preview": "vitepress preview",
     "preview": "node .vitepress/testWeb.js",
     "build2": "node ./docsify/makeSidebar.js",
