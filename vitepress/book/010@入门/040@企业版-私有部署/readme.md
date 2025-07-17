@@ -96,7 +96,7 @@ https://<服务器IP>:8443
 - **下载地址** (请在电脑端微信中打开):
   https://drive.weixin.qq.com/s?k=AI8APQeSAAcVA9D0E8
 
-下载 `apisql-ee-vX.X.X.tar.gz` 文件。软件会持续更新，建议您下载最新版本。
+下载 `apisql-ee-v1.3.8.tar.gz` 文件。软件会持续更新，建议您下载最新版本。
 
 ### 3.2 上传并解压
 
@@ -106,17 +106,17 @@ https://<服务器IP>:8443
     ```
 
 2.  **上传安装包**：
-    将下载的 `apisql-ee-vX.X.X.tar.gz` 上传至目标服务器的 `/opt/apisql` 目录。
+    将下载的 `apisql-ee-v1.3.8.tar.gz` 上传至目标服务器的 `/opt/apisql` 目录。
     ```bash
     # 示例命令，请替换为您的实际文件名和服务器IP
-    scp apisql-ee-vX.X.X.tar.gz root@服务器IP:/opt/apisql/
+    scp apisql-ee-v1.3.8.tar.gz root@服务器IP:/opt/apisql/
     ```
 
 3.  **解压安装文件**：
     此压缩包内通常包含 Docker 镜像文件 (`.tar`) 和 `docker-compose.yml` 配置文件。
     ```bash
     cd /opt/apisql
-    tar -zxvf apisql-ee-vX.X.X.tar.gz
+    gzip -d apisql-ee-v1.3.8.tar.gz
     ```
 
 ### 3.3 导入 Docker 镜像
@@ -124,14 +124,14 @@ https://<服务器IP>:8443
 在 `/opt/apisql` 目录下，执行以下命令将离线镜像包导入到本地 Docker 中：
 
 ```bash
-# 假设解压出的镜像文件名为 apisql-ee.tar
-docker load < apisql-ee.tar
+# 假设解压出的镜像文件名为 apisql-ee-v1.3.8.tar 
+docker load < apisql-ee-v1.3.8.tar
 ```
 
 ### 3.4 启动服务
 
 1.  **检查配置文件**：
-    确认 `/opt/apisql` 目录下的 `docker-compose.yml` 文件内容如下。通常无需修改，但您可以检查并确认密码等配置。
+    确认 `/opt/apisql` 目录下的 [docker-compose.yml](docker-compose.yml) 文件内容如下。通常无需修改，但您可以检查并确认密码等配置。
     ```yaml
     version: '3.8'
     services:

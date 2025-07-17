@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  apisql:
+    container_name: apisql-ee
+    image: registry.cn-hangzhou.aliyuncs.com/ymlib/apisql-ee:latest
+    restart: unless-stopped
+    environment:
+      - APISQL_INIT_ADMIN_PASSWORD=apisql8088
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+    ports:
+      - "8088:80"
+      - "8443:443"

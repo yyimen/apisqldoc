@@ -23,6 +23,15 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: basePath + '/favicon.ico' }],
+    ['script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?849a59ed01590f291ab6e91417c4b80b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `]
   ],
   themeConfig: {
     siteTitle: 'apiSQL',
