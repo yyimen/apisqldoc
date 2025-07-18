@@ -1,6 +1,6 @@
 <p align="right">
  📘 
-  <a href="./README.md">English</a> | 
+  <a href="./readme.md">English</a> | 
   <a href="./README.zh-Hans.md">简体中文</a> | 
   <a href="./README.zh-Hant.md">繁體中文</a> | 
   <a href="./README.ja.md">日本語</a> | 
@@ -14,56 +14,34 @@
 </p>
 
 
-<br>
-
-<br>
-
+<br><br>
 
 <div align="center">
 
-
-  <style>
-    .logo-final {
-
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-      font-size: 28px;
-      font-weight: 600;
-      background-image: linear-gradient(to right, #06b6d4, #6bc283);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-
-      display: inline-block; 
-    }
-
-    .logo-final strong {
-      font-weight: 800;
-    }
-  </style>
-
-  <h1 class="logo-final" style="margin-bottom: 16px; margin-top: 0;">
+  <h1 style="font-size: 28px; font-weight: 800; background-image: linear-gradient(to right, #06b6d4, #6bc283); -webkit-background-clip: text; background-clip: text; color: transparent;">
     <span>api</span><strong>SQL</strong>
   </h1>
 
-
   <p>
-    <strong>API 开发 = 一句 SQL</strong>
+   <strong>API 开发 = 一句 SQL</strong>
   </p>
   <p>
     快速将数据库封装成REST API 和 MCP Server，代理任意 API 并实现企业级安全防护
   </p>
   <p>
     <a href="https://docs.apisql.cn/">
-      <img src="https://img.shields.io/badge/文档-Docs-blue.svg" alt="Docs" />
+      <img src="https://img.shields.io/badge/Docs-Documentation-blue.svg" alt="Docs" />
     </a>
     <a href="https://www.apisql.cn/pricing/">
-      <img src="https://img.shields.io/badge/版本-Editions-green.svg" alt="Editions" />
+      <img src="https://img.shields.io/badge/Editions-Pricing-green.svg" alt="Editions" />
     </a>
     <a href="https://www.apisql.cn/">
-      <img src="https://img.shields.io/badge/官网-Website-orange.svg" alt="Website" />
+      <img src="https://img.shields.io/badge/Website-apisql.cn-orange.svg" alt="Website" />
     </a>
   </p>
 </div>
+
+
 
 ---
 
