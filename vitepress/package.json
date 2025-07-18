@@ -1,5 +1,5 @@
 {
-  "version": "1.0.19-B250718",
+  "version": "1.0.20-B250718",
   "devDependencies": {
     "@lando/vitepress-theme-default-plus": "^1.1.1",
     "vite-plugin-robots": "^1.0.5",
