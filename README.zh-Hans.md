@@ -1,8 +1,18 @@
 <p align="right">
-  📘 Languages: 
+ 📘 
   <a href="./README.md">English</a> | 
-  <a href="./README.zh-CN.md">简体中文</a>
+  <a href="./README.zh-Hans.md">简体中文</a> | 
+  <a href="./README.zh-Hant.md">繁體中文</a> | 
+  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ko.md">한국어</a> | 
+  <a href="./README.de.md">Deutsch</a> | 
+  <a href="./README.fr.md">Français</a> | 
+  <a href="./README.it.md">Italiano</a> | 
+  <a href="./README.pt.md">Português</a> | 
+  <a href="./README.es.md">Español</a> | 
+  <a href="./README.ru.md">Русский</a>
 </p>
+
 
 <br>
 
@@ -130,7 +140,7 @@ CALL transfer_funds(:from_account_id, :to_account_id, :amount)
 <br><br>
 
 
-### 就是这么简洁、优雅！
+### 简洁、优雅、高效！
 
 
 <br><br>
@@ -158,7 +168,7 @@ CALL transfer_funds(:from_account_id, :to_account_id, :amount)
 
 #### 🗄️ 多数据库支持
 
-- **主流关系型数据库**：MySQL、PostgreSQL、Oracle、SQLServer、SQLite
+- **主流关系型数据库**：SQLite、MySQL、PostgreSQL、Oracle、SQLServer
 - **OLTP数据库**：Doris、SelectDB、StarRocks、TiDB、华为 DWS（GaussDB）
 - **对象全面覆盖**：支持将数据表、视图、存储过程、自定义函数统一封装为 API
 
@@ -244,8 +254,3 @@ CALL transfer_funds(:from_account_id, :to_account_id, :amount)
 - 💬 **技术支持**: 请扫码加入微信群
   
   ![联系方式](./vitepress/book/010@入门/020@快速入门/images/WeCom_Group_QRcode.png)
-<style>
-    img[alt="联系方式"]{
-        width:200px;
-    }
-</style>

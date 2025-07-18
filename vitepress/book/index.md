@@ -6,7 +6,7 @@ title: apisql
 titleTemplate: 功能强大的SQL API开发工具
 
 hero:
-  name: "apisql"
+  name: "apiSQL"
   text: "API开发 = 一句SQL"
   tagline: 匠心工程 · 非凡之作
   actions:

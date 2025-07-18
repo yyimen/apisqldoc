@@ -56,7 +56,7 @@ export default defineConfig({
     aside: false,
     footer: {
       message: '',
-      copyright: 'Copyright © 2022 - present apisql  (Ver:' + version + ')'
+      copyright: 'Copyright © 2025 - present apiSQL  (Ver:' + version + ')'
     },
     search: {
       provider: 'local',

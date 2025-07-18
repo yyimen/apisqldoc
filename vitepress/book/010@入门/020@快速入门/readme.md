@@ -15,12 +15,6 @@
 
 ![联系方式](./images/WeCom_Group_QRcode.png)
 
-<style>
-    img[alt="联系方式"]{
-        width:300px;
-    }
-</style>
-
 微信扫一扫，加入用户群。
 
 ## 1.3 文档更新

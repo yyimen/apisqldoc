@@ -1,8 +1,19 @@
 <p align="right">
-  📘 Languages: 
+ 📘 
   <a href="./README.md">English</a> | 
-  <a href="./README.zh-CN.md">简体中文</a>
+  <a href="./README.zh-Hans.md">简体中文</a> | 
+  <a href="./README.zh-Hant.md">繁體中文</a> | 
+  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ko.md">한국어</a> | 
+  <a href="./README.de.md">Deutsch</a> | 
+  <a href="./README.fr.md">Français</a> | 
+  <a href="./README.it.md">Italiano</a> | 
+  <a href="./README.pt.md">Português</a> | 
+  <a href="./README.es.md">Español</a> | 
+  <a href="./README.ru.md">Русский</a>
 </p>
+
+
 
 <br><br>
 
@@ -111,7 +122,7 @@ apiSQL has evolved from a lightweight internal tool to a full-featured API platf
 
 #### 🗄️ Multi-Database Support
 
-- **Relational Databases**: MySQL, PostgreSQL, Oracle, SQLServer, SQLite
+- **Relational Databases**: SQLite、MySQL, PostgreSQL, Oracle, SQLServer
 - **OLTP/Analytical**: Doris, SelectDB, StarRocks, TiDB, Huawei DWS (GaussDB)
 - **Full Object Support**: tables, views, stored procedures, UDFs → APIs
 
@@ -188,12 +199,5 @@ apiSQL has evolved from a lightweight internal tool to a full-featured API platf
 - 🌐 [Official Website](https://www.apisql.cn/)
 - 📘 [Documentation](https://docs.apisql.cn/)
 - 🔥 [Best Practice Demo (Bilibili)](https://www.bilibili.com/video/BV1eHGyzFE7x)
-- 💬 **Support**: Join our WeChat group:
 
-  ![Contact](./vitepress/book/010@入门/020@快速入门/images/WeCom_Group_QRcode.png)
-
-<style>
-    img[alt="Contact"]{
-        width:200px;
-    }
-</style>
+- 💬 **Support**: Please open an issue for questions.
