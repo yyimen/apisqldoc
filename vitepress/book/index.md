@@ -3,7 +3,7 @@
 layout: home
 
 title: apisql
-titleTemplate: 功能强大的SQL API开发工具
+titleTemplate: 功能强大的API开发工具
 
 hero:
   name: "apiSQL"
@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 文档
-      link: /010@入门/010@APISQL简介/readme.md
+      link: /010@入门/010@apiSQL简介/readme.md
     - theme: brand
       text: 目录
       link: /_sidebar.md

@@ -292,7 +292,7 @@ declare namespace JsApi {
 
 ## 示例
 
-更多示例 可以在 Apisql [演示项目](https://open.apisql.cn/ui/demo-area/overview) 中查看
+更多示例 可以在 apiSQL [演示项目](https://open.apisql.cn/ui/demo-area/overview) 中查看
 
 ### HTTP响应状态码
 

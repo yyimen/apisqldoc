@@ -38,11 +38,11 @@ UNION ALL  SELECT '商品C', (SELECT (RANDOM() * 100)::INT + 1)
 # 请在此通过编写YML内容来定义新的监控类型, 参考文档: https://hertzbeat.apache.org/docs/advanced/extend-point 
 category: custom
 # The monitoring type eg: linux windows tomcat mysql aws...
-app: 库存监控-APISQL
+app: 库存监控-apiSQL
 name:
-  zh-CN: 库存监控-APISQL
+  zh-CN: 库存监控-apiSQL
 help:
-  zh-CN: 库存监控-APISQL,演示模板
+  zh-CN: 库存监控-apiSQL,演示模板
 params:
    - field: timeout
     name:

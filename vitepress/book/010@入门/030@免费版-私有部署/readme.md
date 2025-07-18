@@ -1,14 +1,14 @@
 # apiSQL免费版-私有部署
 
 
-> APISQL免费版现已正式上线！这是我们向更广泛开发者群体迈出的重要一步，也是我们对用户的坚定承诺。让我们携手共进，开启API开发的新篇章！
+> apiSQL免费版现已正式上线！这是我们向更广泛开发者群体迈出的重要一步，也是我们对用户的坚定承诺。让我们携手共进，开启API开发的新篇章！
 
 ## 免费版功能
-APISQL免费版专为个人开发者和小型项目量身打造，提供了丰富且实用的基础功能：
+apiSQL免费版专为个人开发者和小型项目量身打造，提供了丰富且实用的基础功能：
 - 支持主流数据库的表、视图、自定义函数、存储过程发布为API
 - 支持SELECT、INSERT INTO、DELETE、UPDATE发布为API
 - 支持GET、POST、PUT、DELETE方法
-- 支持API key、绑定IP、JWT（JSON Web Token）等安全认证
+- 支持API Key、绑定IP、JWT（JSON Web Token）等安全认证
 - 支持自定义传参、支持分页、支持排序、导出Excel等实用功能
 - 支持MySQL、Oracle、SQLServer、PostgreSQL、SQLite、达梦等OLTP数据库
 - 支持Apache Doris、SelectDB、StarRocks、TiDB、华为DWS(GaussDB)等OLAP数据库
@@ -49,7 +49,7 @@ APISQL免费版专为个人开发者和小型项目量身打造，提供了丰�
 ![free-install-04-1.png](./images/free-install-04-1.png)
 
 
-登录后配置【访问控制】，常用API key、IP鉴权、JWT(JSON Web Token）授权
+登录后配置【访问控制】，常用API Key、IP鉴权、JWT(JSON Web Token）授权
 ![free-install-04-2.png](./images/free-install-04-2.png)
 
 
