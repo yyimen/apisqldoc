@@ -35,7 +35,7 @@
             <th>免费版</th>
             <th>专业版</th>
             <th>企业版</th>
-            <th>在线SaaS云</th>
+            <th>在线云版本</th>
         </tr>
     </thead>
     <tbody>
