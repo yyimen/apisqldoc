@@ -6,7 +6,8 @@
 
 ### 1.1 硬件要求
 
-- **最低配置**：1核 CPU / 2GB 内存 / 10GB 存储空间
+- **测试最低配置**：1核 CPU / 2GB 内存 / 10GB 存储空间
+- **推荐配置**：2核 CPU / 4GB 内存 / 50GB 存储空间
 - **操作系统**：Linux (x86_64)
 
 ### 1.2 软件要求
@@ -45,6 +46,7 @@ docker run -d \
   -e APISQL_INIT_ADMIN_PASSWORD=apisql8088 \
   -v /opt/apisql/data:/data \
   -v /opt/apisql/logs:/logs \
+  -v /sys/firmware:/host/sys/firmware:ro \
   -p 8088:80 \
   -p 8443:443 \
   registry.cn-hangzhou.aliyuncs.com/ymlib/apisql-ee:latest
@@ -58,6 +60,7 @@ docker run -d \
 - `-e APISQL_INIT_ADMIN_PASSWORD=apisql8088`: 设置初始管理员密码。
 - `-v /opt/apisql/data:/data`: 将宿主机的 `/opt/apisql/data` 目录挂载到容器内，用于持久化存储应用数据。
 - `-v /opt/apisql/logs:/logs`: 将宿主机的 `/opt/apisql/logs` 目录挂载到容器内，用于持久化存储日志文件。
+- `-v /sys/firmware:/host/sys/firmware:ro`: 将宿主机的 `/sys/firmware` 目录以只读模式挂载到容器内。
 - `-p 8088:80`: 将宿主机的 `8088` 端口映射到容器的 `80` (HTTP) 端口。
 - `-p 8443:443`: 将宿主机的 `8443` 端口映射到容器的 `443` (HTTPS) 端口。
 - `registry.cn-hangzhou.aliyuncs.com/ymlib/apisql-ee:latest`: 指定要运行的 Docker 镜像。
@@ -146,6 +149,7 @@ docker load < apisql-ee-v1.3.8.tar
         volumes:
           - ./data:/data
           - ./logs:/logs
+          - /sys/firmware:/host/sys/firmware:ro
         ports:
           - "8088:80"
           - "8443:443"

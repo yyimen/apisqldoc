@@ -6,9 +6,12 @@ services:
     restart: unless-stopped
     environment:
       - APISQL_INIT_ADMIN_PASSWORD=apisql8088
+      - NODE_OPTIONS=--max-old-space-size=8192
+
     volumes:
       - ./data:/data
       - ./logs:/logs
+      - /sys/firmware:/host/sys/firmware:ro
     ports:
       - "8088:80"
       - "8443:443"
