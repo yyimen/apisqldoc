@@ -31,7 +31,7 @@ apiSQL免费版专为个人开发者和小型项目量身打造，提供了丰�
 
 ### 3. Docker部署
 复制docker run命令快速开始。
-也支持使用Docker Compose，将APISQL作为API开发平台与你的数据库、前端项目编排在一起使用。
+也支持使用Docker Compose，将apiSQL作为API开发平台与你的数据库、前端项目编排在一起使用。
 ![free-install-02.png](./images/free-install-02.png)
 如需在部署时自定义密码，请直接修改命令（默认值：66666666）即可。
 <br>

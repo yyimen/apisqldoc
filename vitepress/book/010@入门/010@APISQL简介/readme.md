@@ -1,6 +1,6 @@
 # apiSQL简介
 
-  快速将数据库封装成REST API 和 MCP Server，代理任意 API 并实现企业级安全防护
+  快速将数据库封装成REST API 和 MCP Server，反代 API 并实现企业级安全防护。
 
 ## 核心功能
 
@@ -20,7 +20,7 @@
 
 ![APISQL系统架构示意图](./images/APISQL_DiagramV1b.png)
 
-<div style="text-align: center;">APISQL系统架构示意图</div>
+<div style="text-align: center;">apiSQL系统架构示意图</div>
 
 <br>
 <br>
@@ -35,7 +35,7 @@
             <th>免费版</th>
             <th>专业版</th>
             <th>企业版</th>
-            <th>在线云版本</th>
+            <th>在线云</th>
         </tr>
     </thead>
     <tbody>
@@ -49,7 +49,7 @@
             <td>不适用</td>
         </tr>
         <tr>
-            <td>支持https访问</td>
+            <td>https访问</td>
             <td>支持https访问并自动续期ssl证书</td>
             <td>✔</td>
             <td>✔</td>
@@ -59,8 +59,8 @@
         <tr>
             <td>多账号登陆</td>
             <td>支持使用多个账号登陆</td>
-            <td>单admin账号</td>
-            <td>单admin账号</td>
+            <td>单个admin</td>
+            <td>单个admin</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
@@ -92,7 +92,7 @@
         <tr>
             <td rowspan="3">数据源</td>
             <td>数据库</td>
-            <td>支持多种关系型数据库如MySQL、PostgreSQL、SQL Server、Oracle、SQLite、StarRocks、达梦、通过Http扩展连接自定义数据库</td>
+            <td>MySQL、PostgreSQL、SQL Server、Oracle、SQLite、StarRocks、达梦、通过Http扩展连接自定义数据库</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <td>多环境</td>
-            <td>可以为开发环境和生产环境各配置一个数据库，但表名需一样</td>
+            <td>开发时连接测试库，生产环境连接正式库；测试通过后再正式上线生产</td>
             <td>✘</td>
             <td>✔</td>
             <td>✔</td>
@@ -108,7 +108,7 @@
         </tr>
         <tr>
             <td>数据管理</td>
-            <td>Web端浏览数据库和表以及写SQL语句操作数据库</td>
+            <td>Web版轻量级数据库GUI，浏览数据库和表、编写运行SQL操作数据库</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -124,15 +124,15 @@
             <td>✔</td>
         </tr>
         <tr>
-            <td>支持JavaScript</td>
-            <td>支持使用JavaScript编程语言，实现丰富自定义功能。</td>
+            <td>支持JS</td>
+            <td>支持使用JavaScript编程语言，实现丰富自定义功能</td>
             <td>✘</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td>支持API代理</td>
+            <td>API代理</td>
             <td>支持将现有单个或多个API代理发布，提供认证、访问日志等统一管理</td>
             <td>✘</td>
             <td>✔</td>
@@ -140,8 +140,8 @@
             <td>✔</td>
         </tr>
         <tr>
-            <td>支持前后置脚本</td>
-            <td>可配置前置js脚本进行请求处理，后置脚本对响应数据再加工等操作</td>
+            <td>前后置脚本</td>
+            <td>可配置前置JS脚本进行请求处理，后置脚本对响应数据再加工等操作</td>
             <td>✘</td>
             <td>✔</td>
             <td>✔</td>
@@ -189,7 +189,7 @@
             <td>✔</td>
         </tr>
         <tr>
-            <td>使用平台用户认证</td>
+            <td>平台用户认证</td>
             <td>使用平台用户、密码进API认证</td>
             <td>✘</td>
             <td>✘</td>
@@ -215,7 +215,7 @@
         </tr>
         <tr>
             <td>动态特性</td>
-            <td>REST功能：不写SQL生成接口；SUDB：一个接口调用整个数据库；</td>
+            <td>REST功能：不写SQL生成接口；SUDB功能：一个接口调用整个数据库；</td>
             <td>✘</td>
             <td>✔</td>
             <td>✔</td>
@@ -224,14 +224,14 @@
         <tr>
             <td rowspan="4">企业与集群能力</td>
             <td>主控负载均衡</td>
-            <td>核心程序一主控、多work节点协同工作，高可用、负载均衡。</td>
+            <td>核心程序一主控、多work节点协同工作，高可用、负载均衡</td>
             <td>✘</td>
             <td>✘</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td>数据网关集群模式</td>
+            <td>数据网关集群</td>
             <td>同一机房，将多个数据网关分布式部署，组成高可用集群、负载均衡</td>
             <td>✘</td>
             <td>✘</td>
@@ -240,7 +240,7 @@
         </tr>
         <tr>
             <td>K8S环境</td>
-            <td>支持K8S私有化环境部署，自动扩缩容</td>
+            <td>支持K8S环境部署，自动扩缩容</td>
             <td>✘</td>
             <td>✘</td>
             <td>✔</td>
@@ -329,7 +329,10 @@ Apache Doris、SelectDB、StarRocks、TiDB、华为DWS(GaussDB)等OLAP数据库�
 <br>
 <br>
 
-### AI大模型方面
+### AI大模型场景
+
+✔️ ​**通用的MCP Server**
+将本地数据库部分表或全部转为MCP Server，对接AI智能体（Agent），以及解决对话式AI的用户数据权限难题。
 
 ✔️ ​**大模型API公网化服务**
 支持将本地局域网的DeepSeek API发布至公网自用，或将算力资源以模型API形式进行出租，无需端口映射、服务器、公网IP及HTTPS证书配置。
@@ -337,15 +340,12 @@ Apache Doris、SelectDB、StarRocks、TiDB、华为DWS(GaussDB)等OLAP数据库�
 ✔️ ​**多云API资源池整合**
 可接入多个云厂商的DeepSeek API构建资源池，实现大模型API高可用部署，保障业务连续性及服务可靠性。
 
-✔️ ​**智能体实时数据接口**
-将本地数据库以API方式快速发布至互联网，为AI智能体（Agent）及自建RAG系统提供实时参数调用能力，解决对话式AI的用户数据权限难题。
-
 ✔️ ​**全球分布式API网关**
-支持全球分布式部署APISQL网关，仅需基础网络条件即可实现OpenAI、xAI Grok、Google Gemini等国际大模型API的中转服务，通过二次分发多APIkey满足多项目调用需求。
+支持全球分布式部署apiSQL网关，仅需基础网络条件即可实现OpenAI、Claude、Google Gemini等国际大模型API的中转服务，通过二次分发多APIkey满足多项目调用需求。
 
 <br>
 
-### 个人应用方面
+### 个人应用场景
 
 ✔️ ​**个人开发者公网调试支持**
 为内网个人开发环境提供HTTPS备案域名访问能力，数据库API快速上线公网，助力小程序等应用便捷调试。
