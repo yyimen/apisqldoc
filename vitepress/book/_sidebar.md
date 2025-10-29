@@ -35,4 +35,6 @@
   - [成员角色＆权限](/030@项目/0030@成员角色＆权限.md)
   - [数据管理](/030@项目/0040@数据管理.md)
 - [案例](/040@案例/010@apiSQL与HertzBeat(实时监控告警)的零代码实现.md)
+- [网关]
+  - [windows的apiSQL网关2](/050@网关/010@windows的apiSQL网关2/readme.md)
 - [index](/index.md)

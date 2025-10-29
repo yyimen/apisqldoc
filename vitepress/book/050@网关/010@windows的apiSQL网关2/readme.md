@@ -24,11 +24,11 @@
   - envs: 应用的环境变量,可以为空数组
   - argv: 应用的命令行参数,可以为空数组
 ## 程序是以windows的服务形式运行的
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 ## 安装后的文件夹
-![alt text](image-1.png)
+![alt text](./images/image-1.png)
 ## 正常的启动的资源管理器
-![alt text](image.png)
+![alt text](./images/image.png)
 
 
 ## windows的apiSQL网关注意事项
