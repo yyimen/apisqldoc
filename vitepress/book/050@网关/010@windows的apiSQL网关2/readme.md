@@ -18,6 +18,7 @@
 - endpoint: apiSQL平台的地址,默认是 https://open.apisql.cn,若需要连接apiSQL企业版/专业版,需要修改为企业版/专业版的地址
 - nodeId: apiSQL 网关的节点id,需要在平台上获取
 - nodeToken: apiSQL平台的节点token,需要在平台上获取
+- logLevel: 日志级别 info|debug|warn|error
 - otherApps 如果用有需要,可以在这个数组中配置其他需要启动的应用
   - name: 应用的名称,在日志中会显示
   - file: 应用的可执行文件路径,可以是exe/bat/cmd/js文件
