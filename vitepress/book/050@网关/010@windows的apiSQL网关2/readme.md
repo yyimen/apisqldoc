@@ -37,9 +37,10 @@
 windows 10 及以上 node.js v22 其他 v18
 
 ### windows2008及windows7的安装注意
-advapi32.dll 的版本要求是 6.1.7601 及以上
-若低于可以安装KB3080149以升级
-KB3080149 下载地址: https://support.microsoft.com/zh-cn/topic/更新的客户体验和诊断遥测-0b4f29c3-8361-b748-f862-7ecedbc57cbf
+- advapi32.dll 的版本要求是 6.1.7601 及以上若低于可以安装KB3080149以升级
+  - KB3080149 下载地址: https://support.microsoft.com/zh-cn/topic/更新的客户体验和诊断遥测-0b4f29c3-8361-b748-f862-7ecedbc57cbf
+- windows 7 只能运行 oracle oci 19版本以下 建议采用 18.5
+  
 ### 关于oracle19的oci模式
 若要使用网关连接oracle19,需要安装oracle instant client(oracle称作thick模式)
 oracle20及以上不需要oracle instant client(oracle称作thin模式)
