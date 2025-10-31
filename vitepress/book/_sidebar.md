@@ -36,5 +36,6 @@
   - [数据管理](/030@项目/0040@数据管理.md)
 - [案例](/040@案例/010@apiSQL与HertzBeat实时监控告警的零代码实现.md)
 - [网关]
-  - [windows的apiSQL网关2](/050@网关/010@windows的apiSQL网关2/readme.md)
+  - [windows网关连接Oracle](/050@网关/010@windows网关连接Oracle/readme.md)
+  - [Linux网关连接Oracle](/050@网关/020@Linux网关连接Oracle/readme.md)
 - [index](/index.md)
