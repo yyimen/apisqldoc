@@ -154,27 +154,7 @@ declare namespace JsApi {
          * https://www.npmjs.com/package/mqtt/v/5.10.1
          */
         mqtt: object;
-        /**
-         * https://www.npmjs.com/package/mssql/v/11.0.1
-         */
-        mssql: object;
-        /**
-         * https://www.npmjs.com/package/mysql2/v/3.11.3
-         */
-        mysql2: object;
-        /**
-         * https://www.npmjs.com/package/oracledb/v/6.6.0
-         */
-        oracledb: object;
-        /**
-         * https://www.npmjs.com/package/pg/v/8.13.0
-         */
-        pg: object;
-        /**
-         * 注意 此库原名称 为 'better-sqlite3' ,此处将其中的 中划线 ('-') 改成了 下划线('_')
-         * https://www.npmjs.com/package/better-sqlite3/v/11.3.0
-         */
-        better_sqlite3: object;
+        
     };
 
     /**
