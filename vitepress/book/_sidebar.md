@@ -35,7 +35,12 @@
   - [成员角色＆权限](/030@项目/0030@成员角色＆权限.md)
   - [数据管理](/030@项目/0040@数据管理.md)
 - [案例](/040@案例/010@apiSQL与HertzBeat实时监控告警的零代码实现.md)
-- [网关]
+- JS类API的设计例子
+  - [HTTP响应状态码](/045@JS类API的设计例子/010@HTTP响应状态码/readme.md)
+  - [JS中使用数据源](/045@JS类API的设计例子/020@JS中使用数据源/readme.md)
+  - [使用gm对象](/045@JS类API的设计例子/030@使用gm对象/readme.md)
+  - [JS中执行动态SQL](/045@JS类API的设计例子/040@JS中执行动态SQL/readme.md)
+- 网关
   - [windows网关连接Oracle](/050@网关/010@windows网关连接Oracle/readme.md)
   - [Linux网关连接Oracle](/050@网关/020@Linux网关连接Oracle/readme.md)
 - [index](/index.md)
